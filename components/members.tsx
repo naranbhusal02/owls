@@ -6,6 +6,7 @@ import Image from "next/image";
 import {
   Github,
   Twitter,
+  Linkedin,
   Globe,
   ChevronLeft,
   ChevronRight,
@@ -19,6 +20,7 @@ const members = [
     image: "https://iili.io/2yBChFV.png",
     github: "https://github.com/naranbhusal02",
     twitter: "https://twitter.com/naranbhusal02",
+    linkedin: "https://linkedin.com/in/naranbhusal02",
     website: "https://naranbhusal02.me",
   },
   {
@@ -28,6 +30,7 @@ const members = [
     image: "https://iili.io/2Z7vNls.jpg",
     github: "https://github.com/nayan135",
     twitter: "https://twitter.com/NoOneKnows135",
+    linkedin: "https://linkedin.com/in/nayan-acharya",
     website: "https://nayan135.com.np",
   },
   {
@@ -36,7 +39,8 @@ const members = [
     role: "Moderator",
     image: "https://iili.io/2yLtERR.jpg",
     github: "https://github.com/JCT-B",
-    twitter: "https://twitter.com/janesmith",
+    twitter: "https://twitter.com/JCT-B",
+    linkedin: "https://linkedin.com/in/mission-acharya",
     website: "https://janesmith.design",
   },
   {
@@ -46,6 +50,7 @@ const members = [
     image: "https://iili.io/2yx6cVs.png",
     github: "https://github.com/shasank00",
     twitter: "https://twitter.com/alexjohnson",
+    linkedin: "https://linkedin.com/in/shasank-shrestha",
     website: "https://alexjohnson.dev",
   },
   {
@@ -55,6 +60,7 @@ const members = [
     image: "https://iili.io/32sxAle.png",
     github: "https://github.com/sarahwilson",
     twitter: "https://twitter.com/sarahwilson",
+    linkedin: "https://linkedin.com/in/sanjog-pandey",
     website: "https://sarahwilson.pm",
   },
   {
@@ -64,6 +70,7 @@ const members = [
     image: "https://iili.io/32sIsPS.png",
     github: "https://github.com/sarahwilson",
     twitter: "https://twitter.com/sarahwilson",
+    linkedin: "https://linkedin.com/in/prazwal-roka",
     website: "https://sarahwilson.pm",
   },
   {
@@ -71,9 +78,10 @@ const members = [
     name: "Nishan Regmi",
     role: "Developer",
     image: "https://iili.io/2rQSlI4.jpg",
-    github: "https://github.com/sarahwilson",
-    twitter: "https://twitter.com/sarahwilson",
-    website: "https://sarahwilson.pm",
+    github: "https://github.com/nishandotdev",
+    twitter: "https://twitter.com/nishanregmi",
+    linkedin: "https://linkedin.com/in/nishan-regmi",
+    website: "https://nishanregmi.info.np",
   },
   {
     id: 8,
@@ -82,6 +90,7 @@ const members = [
     image: "https://iili.io/2yt9vbs.jpg",
     github: "https://github.com/sarahwilson",
     twitter: "https://twitter.com/sarahwilson",
+    linkedin: "https://linkedin.com/in/rabin-chudali",
     website: "https://sarahwilson.pm",
   },
 ];
@@ -174,6 +183,15 @@ export default function Members() {
                       >
                         <Twitter className="w-5 h-5" />
                         <span className="sr-only">Twitter</span>
+                      </a>
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-full hover:bg-muted transition-colors"
+                      >
+                        <Linkedin className="w-5 h-5" />
+                        <span className="sr-only">LinkedIn</span>
                       </a>
                       <a
                         href={member.website}
